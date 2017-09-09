@@ -153,6 +153,15 @@
   border: 1px solid #009688;
   color: #009688;
 }
+
+.online-v .offline-a{
+  display: none;
+}
+
+.offline .online{
+  display: none;
+}
+
 footer {
   text-align: center;
   padding: 20px
@@ -165,6 +174,21 @@ footer h4 {
 footer div {
   display: inline;
   width: 100%;
+}
+
+/* Queris  */
+
+@media only screen and (max-width: 700px) {
+  .main {
+    width: 100%;
+  }
+
+  .preview{
+    width: 100%;
+  }
+  .play {
+    font-size: 9px;
+  }
 }
 
 .fa {
