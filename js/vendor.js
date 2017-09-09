@@ -21,8 +21,12 @@ $(document).ready(function() {
         } else {
         var channel=data.stream.channel;
           console.log(channel.display_name+' no online');
-          $('#chanels').append('<a href="'+channel.url+'" target="_blank"><article id="'+channel.display_name+'" class="chanel divider-color"><img class="logo" src="'+channel.logo+'" alt=""><h3 class="title">'+channel.display_name+'</h3><h5 class="description">'+channel.status+'</h5><img class="preview" src="'+data.stream.preview.large+'" alt=""><button id="btn-'+channel.display_name+'" type="button" name="button">View Preview</button></article></a>');
-          $('#btn-'+channel.display_name).on("click", function(event) {
+          $('#chanels').append('<article id="'+channel.display_name+'" class="chanel divider-color"><img class="logo" src="'+channel.logo+'" alt=""><h3 class="title">'+channel.display_name+'</h3><h5 class="description">'+channel.status+'</h5><span class="fa fa-play preview play"></span><img class="preview" src="'+data.stream.preview.large+'" alt=""><div class="container-btn"><a class="fa fa-external-link btnS text-primary-color accent-color divider-color box-shadow " href="'+channel.url+'" target="_blank"><span>Go</span></a><button class="btnS divider-color accent-color box-shadow" id="btn-preview-'+channel.display_name+'" type="button" name="button">Preview</button></div></article>');
+          $('#btn-preview'+channel.display_name).on("click", function(event) {
+              $('#'+channel.display_name).toggleClass( "view" );
+            }
+          );
+          $('#btn-preview-'+channel.display_name).on("click", function(event) {
               $('#'+channel.display_name).toggleClass( "view" );
             }
           );
