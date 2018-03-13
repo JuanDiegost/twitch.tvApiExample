@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-$(document).ready(function () {
-  var channels = ["ESL_SC2", "ESL_CSGO", "GrietaGaming", "CooLifeGame", "plg", "renzohgg", "lvpes"],
-    api = 'https://wind-bow.gomix.me/twitch-api/',
-    clientID = 'c1ohy7babk6lwuv8tic5s113mv4izg';
-=======
 $(document).ready(function() {
   var channels = ["ESL_SC2","ESL_CSGO","NVIDIAGeForceES","CooLifeGame","plg","OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
   api ='https://wind-bow.gomix.me/twitch-api/',
   clientID='c1ohy7babk6lwuv8tic5s113mv4izg';
->>>>>>> 5149f784f340e27959f29459dd7ac4228455e40d
   end = '?callback=?';
 
   for (var i = 0; i < channels.length; i++) {
