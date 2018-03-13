@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var channels = ["ESL_SC2","ESL_CSGO","NVIDIAGeForceES","CooLifeGame","plg","OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"],
+  var channels = ["ESL_SC2","ESL_CSGO","NVIDIAGeForceES","CooLifeGame","plg","renzohgg","lvpes"],
   api ='https://wind-bow.gomix.me/twitch-api/',
   clientID='c1ohy7babk6lwuv8tic5s113mv4izg';
   end = '?callback=?';
